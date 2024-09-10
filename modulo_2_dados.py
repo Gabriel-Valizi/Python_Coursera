@@ -21,3 +21,4 @@ print(len(texto))
 
 IMCstr = str(IMC)
 print(len(IMCstr))
+print(len(str(IMC)))
