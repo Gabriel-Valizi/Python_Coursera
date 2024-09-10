@@ -1,4 +1,4 @@
-tempF= input("Digite uma temperatura em fahrenheit: ")
+tempF= input("Digite uma temperatura em fahrenheit: 200")
 tempC = (float(tempF) - 32) * 5 /9
 
 print("A temperatura, em celsius, é ", tempC)
