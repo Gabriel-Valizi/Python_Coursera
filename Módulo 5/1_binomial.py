@@ -10,15 +10,23 @@ def fatorial (n):
 
     return resultado
 
-# Função main
+def binomial (n, k):
+    
+    return ((fatorial(n)) / (fatorial(k) * fatorial(n - k)))
+
+############################ Função main ############################
 
 n = int(input("Digite o valor de n: "))
+k = int(input("Digite o valor de k: "))
 
-if n < 0:
+if n < 0 or k < 0:
 
     print("O fatorial não está definido para números negativos.")
 
 else:
 
     fat = fatorial(n)
-    print(fat)
+    fat_2 = fatorial(k)
+    bin = binomial(n, k)
+    print("Os fatoriais de n e k são, respectivamente,", fat, "e", fat_2)
+    print("O binomial n/k é", bin)
