@@ -6,7 +6,7 @@ def n_primos (inteiro):
         return 1
     
     # inteiro > 2 --> quantidade > 1
-    # exemplo:
+    # exemplos:
     # inteiro = 3  -->  quantidade  =  2 (2 e 3)
     # inteiro = 4  -->  quantidade  =  2 (2 e 3)
     # inteiro = 5  -->  quantidade  =  3 (2, 3 e 5)
@@ -14,11 +14,10 @@ def n_primos (inteiro):
     else:
 
         # ver se cada número, de 2 a "inteiro", é primo
-        # usar loop (while) indo de "contador" até "inteiro"
+        # usar loop (while), indo de "contador" até "inteiro"
 
         # inicializando quantidade_primos como 1, pois sempre haverá o 2
         quantidade_primos = 1 
-
         contador = 3
 
         while contador <= inteiro:
@@ -33,14 +32,15 @@ def n_primos (inteiro):
                 resto = contador % divisor
                 divisor = divisor + 1
 
-                if resto == 0:
+                #if resto == 0:
 
                     #print("Contador NÃO É primo")
-                    quantidade_primos = quantidade_primos + 1
 
-                #elif divisor == contador:
+                if divisor == contador:
     
                     #print("Contador É primo")
+                    quantidade_primos = quantidade_primos + 1
+
 
             contador = contador + 1
 
